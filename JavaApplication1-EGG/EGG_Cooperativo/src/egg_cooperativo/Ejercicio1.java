@@ -8,7 +8,8 @@ package egg_cooperativo;
 import java.util.Scanner;
 
 /**
- *
+* Escribir un programa que pida dos números enteros por teclado y calcule la suma de los dos. 
+ * El programa deberá después mostrar el resultado de la suma
  * @author swoop
  */
 public class Ejercicio1 {
