@@ -23,6 +23,12 @@ public class MascotaApp {
         
         Mascota m1 = new Mascota("Aukan", leer.next(), "perro");
         
+        //m1.nombre = "Pepe Chiquito";
+        
+        m1.setNombre("Pepe Chiquito");
+        
+        //System.out.println(m1. );
+        
 //        m1.apodo = "Aukan";
 //        m1.nombre = leer.next();
 //        m1.tipo = "perro";
@@ -31,7 +37,7 @@ public class MascotaApp {
 //        m1.cola = true;
 //        m1.color = "Bicolor";
         
-        System.out.println(m1.apodo + "  " +m1.edad + " "+ m1.tipo + "  "+ m1.color);
+        System.out.println(m1.apodo + "  " +m1.edad + " "+ m1.tipo + "  ");
         
 
     }
