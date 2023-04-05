@@ -19,8 +19,11 @@ public class Mascota {
     private int edad;
     private boolean cola;
     private String raza;
+    
+    private int energia;
 
     public Mascota() {
+        this.energia = 1000;
     }
 
     public Mascota(String nombre, String apodo, String tipo) {
@@ -28,6 +31,7 @@ public class Mascota {
         this.apodo = apodo;
         if (tipo.equals("Perro")||tipo.equals("Gato")||tipo.equals("Loro")||tipo.equals("Conejo")||tipo.equals("Carpincho"))
         this.tipo = tipo;
+        this.energia = 1000;
     }
 
     public Mascota(String nombre, String apodo, String color, int edad, boolean cola, String raza) {
@@ -37,6 +41,7 @@ public class Mascota {
         this.edad = edad;
         this.cola = cola;
         this.raza = raza;
+        this.energia = 1000;
     }
     
     public void setNombre(String nombre){
@@ -97,8 +102,14 @@ public class Mascota {
     public String getRaza() {
         return raza;
     }
-
-    @Override
+    public int pasear (int energiaRestar) {
+            // energia = energia - energiaRestar;
+            energia -= energiaRestar; 
+            
+            return energia;
+    }
+    // me devuelve funcion 
+    @Override                           
     public String toString() {
         return "Mascota{" + "nombre=" + nombre + ", apodo=" + apodo + ", tipo=" + tipo + ", color=" + color + ", edad=" + edad + ", cola=" + cola + ", raza=" + raza + '}';
     }
