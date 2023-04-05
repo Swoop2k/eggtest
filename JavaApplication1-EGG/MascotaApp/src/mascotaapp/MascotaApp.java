@@ -37,8 +37,10 @@ public class MascotaApp {
 //        m1.cola = true;
 //        m1.color = "Bicolor";
         
-        System.out.println(m1.apodo + "  " +m1.edad + " "+ m1.tipo + "  ");
-        
+        //System.out.println(m1.apodo + "  " +m1.edad + " "+ m1.tipo + "  ");
+        //System.out.println(m1.getNombre());
+          
+        System.out.println(m1.toString());
 
     }
     
