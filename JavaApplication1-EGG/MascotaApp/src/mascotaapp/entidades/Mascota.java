@@ -30,19 +30,23 @@ public class Mascota {
         this.nombre = nombre;
         this.apodo = apodo;
         if (tipo.equals("Perro")||tipo.equals("Gato")||tipo.equals("Loro")||tipo.equals("Conejo")||tipo.equals("Carpincho"))
-        this.tipo = tipo;
+        {this.tipo = tipo;
+            }
         this.energia = 1000;
     }
-
-    public Mascota(String nombre, String apodo, String color, int edad, boolean cola, String raza) {
+        
+    public Mascota(String nombre, String apodo, String tipo, String color, int edad, boolean cola, String raza) {
         this.nombre = nombre;
         this.apodo = apodo;
+        this.tipo = tipo;
         this.color = color;
         this.edad = edad;
         this.cola = cola;
         this.raza = raza;
         this.energia = 1000;
     }
+    
+   //SET
     
     public void setNombre(String nombre){
         
@@ -75,6 +79,8 @@ public class Mascota {
         this.raza = raza;
     }
     
+    //GET
+    
     public String getNombre(){
         return nombre;
     }
@@ -98,13 +104,35 @@ public class Mascota {
     public boolean isCola() {
         return cola;
     }
-
+    
     public String getRaza() {
         return raza;
     }
+    
+// Funciones    
+    
+/**
+ * 
+ * @param energiaRestar
+ * @return energia
+ */    
     public int pasear (int energiaRestar) {
             // energia = energia - energiaRestar;
             energia -= energiaRestar; 
+            
+            return energia;
+    }
+    /**
+     * 
+     * @param energiaRestar
+     * @param vueltas
+     * @return energia
+     */
+    public int pasear (int energiaRestar, int vueltas) {
+            
+         for (int i = 0; i < vueltas; i++){
+         energiaRestar-= energiaRestar;
+         }
             
             return energia;
     }
